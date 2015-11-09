@@ -1,0 +1,121 @@
+.news-box{
+  background: #FFF;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 2px 2px 0 0 $color-box-shadow;
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  h2{
+    font-size: 13px;
+    clear: both;
+    margin: 22px 0 16px;
+    letter-spacing: -0.1px;
+    color: #000;
+  }
+  
+  figure{
+    margin: 0 20px 0 0;
+    padding: 0;
+    float: left;
+  }
+}
+
+.column{
+  width: 50%;
+  padding: 0 $news-column-padding $news-column-padding;
+  float: left;
+  position: relative;
+  
+  &.second{
+    background: url(../img/bg/bg_dott-grey.png) repeat-y left top;
+    
+    .head-txt::before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: url(../img/bg/bg_dott-white.png) repeat-y left top;
+    }
+  }
+}
+
+.head-txt{
+  @include background-head-txt();
+  
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 1px $color-text-shadow;
+  margin: 0  (-$news-column-padding) 2px;
+  overflow: hidden;
+  border-bottom: 2px solid #e5e5e5;
+  position: relative;
+}
+
+.news-colorbox{
+  display: block;
+  
+  img{
+    border: 1px solid #eae1d4;
+    padding: 2px;
+    background: #FFF;
+    box-sizing: content-box;
+  }
+}
+
+.article{
+  min-height: 175px;
+  overflow: hidden;
+}
+
+.description{
+  overflow: hidden;
+  
+  p{
+    margin: -5px 0 12px;
+    line-height: 20px;
+  }
+}
+
+a.more{
+  text-decoration: none;
+  position: relative;
+  //top: 2px;
+  
+  &:hover{
+    border-bottom: 1px solid $color-pink;
+  }
+  
+  &::after{
+    @include sprite-retina($sprite-1x-ico_arrow-pink, $sprite-2x-ico_arrow-pink);
+    
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: $screen-small){
+  .column{
+    float: none;
+    clear: both;
+    width: 100%;
+    background: none;
+    
+    &.second{
+      .head-txt::before{
+        display: none;
+      }
+    }
+  }
+}

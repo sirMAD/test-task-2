@@ -1,0 +1,32 @@
+
+// Variables
+//------------------------------------------------------------------------------
+
+// Color definitions
+$color-red: #EF4C23 !default;
+$color-pink: #e61052 !default;
+$color-text-shadow: rgba(0,0,0,0.1);
+$color-box-shadow: rgba(0,0,0,0.05);
+
+// Container definitions
+$container-width: 960px !default;
+$container-padding: 20px !default;
+
+// Z-indexes
+$zindex-base: 1 !default;
+
+// Font definitions
+$font-arial: "Arial", "Helvetica Neue", Helvetica, serif !default;
+$font-size: 1.2em !default;
+$font-line-height: 1.4 !default;
+$font-color: #97866f !default;
+
+// Border radius
+$border-radius: 10px !default;
+
+// Variables fo news component
+$news-column-padding: 20px;
+
+// Media queries breakepoints
+$screen-medium: 991px;
+$screen-small: 768px;
