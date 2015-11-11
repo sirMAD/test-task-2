@@ -8,7 +8,8 @@
    ========================================================================= */
 
 // Vendor Dependencies
-@import "normalize.css/normalize";
+//@import "normalize.css/normalize"; //reason fo the error: "Cannot read property 'contents'""
+@import "vendor/normalize";
 @import "vendor/colorbox";
 
 // Authored Dependencies

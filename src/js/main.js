@@ -36,7 +36,7 @@
             open: true,
             width: '70%',
             height: '70%'
-          }),
+          });
           
       $(document).bind('cbox_complete', function(){
         if(counter && counter >= intImagesCount){
